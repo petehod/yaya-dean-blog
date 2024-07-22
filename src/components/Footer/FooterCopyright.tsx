@@ -1,0 +1,10 @@
+import { Copyright } from "@components/Copyright";
+import { memo } from "react";
+
+export const FooterCopyright = memo(() => {
+  return (
+    <div className="p-4 text-center bg-black bg-opacity-20">
+      <Copyright />
+    </div>
+  );
+});
