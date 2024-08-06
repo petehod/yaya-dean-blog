@@ -8,14 +8,14 @@ import React, { memo, useState } from "react";
 import { Hamburger } from "./Hamburger";
 
 export const HamburgerMenu = memo(() => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className="relative right-4">
+    <div className="relative ">
       <div
         className={`flex flex-col justify-between w-8 h-8 cursor-pointer z-50`}
         onClick={toggleMenu}
