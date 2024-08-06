@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { linkVariants } from "@constants/animation.constants";
 export const Nav = memo(() => {
   return (
-    <nav className="flex gap-4">
+    <nav className="flex gap-8">
       {NAV_LINKS.map((link) => (
         <motion.div
           key={link.name}

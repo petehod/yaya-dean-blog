@@ -1,18 +1,28 @@
 export const HOME_LINK = "/";
 export const SHOP_LINK = "https://shop.yayadean.com";
+export const GLG_LINK = "https://shop.yayadean.com/products/guitar-loop-god";
 export const LINK_TREE_LINK = "https://links.yayadean.com";
 export const TIK_TOK_LINK = "https://www.tiktok.com/@_yayadean";
-export const YOUTUBE_LINK = "https://www.youtube.com/yayadean";
+export const YOUTUBE_LINK = "https://www.youtube.com/@yayadean38";
 export const INSTAGRAM_LINK = "https://www.instagram.com/_yayadean";
+export const LOOP_TUTORIALS_LINK =
+  "https://www.youtube.com/playlist?list=PL_Gh-6A5pKdNl3MmlkqztY8HQc9FmLUe3";
+export const LOOPS_BY_DEAN_LINK =
+  "https://www.youtube.com/playlist?list=PL_Gh-6A5pKdOPayJ0dzSAEL2RWBkJYjdH";
+export const NOTION_TEMPLATE_LINK = "https://yayadean.notion.site";
+
+export const NAME_GENERATOR_LINK = "https://namegenerator.yayadean.com";
+
 export const NAV_LINKS = [
   {
     name: "Home",
     link: HOME_LINK,
   },
   {
-    name: "Shop",
-    link: SHOP_LINK,
+    name: "Guitar Loop God",
+    link: GLG_LINK,
   },
+  { name: "Name Generator", link: NAME_GENERATOR_LINK },
   {
     name: "Links",
     link: LINK_TREE_LINK,

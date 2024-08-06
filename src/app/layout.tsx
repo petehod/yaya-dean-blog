@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${pjs.className} ${LAYOUT_STYLE}`}>
+      <body className={`${pjs.className} ${LAYOUT_STYLE} gradient-bg`}>
         <Header />
         {children}
         <Footer />

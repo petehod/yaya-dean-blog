@@ -10,7 +10,7 @@ const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const MdxLayout = memo(({ children }: { children: React.ReactNode }) => {
   return (
-    <div className={`${pjs.className} ${LAYOUT_STYLE}`}>
+    <div className={`${pjs.className} ${LAYOUT_STYLE} gradient-bg`}>
       <Header />
       <MarkdownWrapper>{children}</MarkdownWrapper>
       <Footer />

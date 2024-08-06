@@ -8,7 +8,7 @@ import { SocialMediaIcons } from "@components/Icon";
 
 export const Footer = memo(() => {
   return (
-    <footer className="bg-dark text-white p-4 text-center gap-6 flex flex-col">
+    <footer className=" p-4 text-center gap-6 flex flex-col">
       <NewsletterForm />
       <SocialMediaIcons />
       <FooterCopyright />

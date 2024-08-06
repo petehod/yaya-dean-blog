@@ -11,7 +11,7 @@ export const ArticleThemeLayout = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={`${pjs.className} ${LAYOUT_STYLE}`}>
+    <div className={`${pjs.className} ${LAYOUT_STYLE} gradient-bg`}>
       <Header />
       <main className={`min-h-screen`}>{children}</main>
       <Footer />

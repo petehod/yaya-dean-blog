@@ -29,7 +29,7 @@ const config: Config = {
       },
 
       colors: {
-        primary: "#b525f8",
+        primary: "#2682D8",
         primaryFaded: "rgba(202, 108, 248, 0.15)",
         secondary: "#C9ABD9",
         tertiary: "#EFECF0",

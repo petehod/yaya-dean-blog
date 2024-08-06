@@ -9,7 +9,7 @@ export const ArticleHeader = memo(() => {
   const slug = breadcrumbs[breadcrumbs.length - 1]?.slug!;
   const articleInformation = useArticleInformation(slug);
   return (
-    <div className="flex flex-col bg-dark w-full max-w-60 bg-black text-white  pt-2 mb-12">
+    <div className="flex flex-col w-full max-w-60  pt-2 mb-12">
       <Breadcrumb breadcrumbs={breadcrumbs} />
 
       <div className={`pt-4`}>
