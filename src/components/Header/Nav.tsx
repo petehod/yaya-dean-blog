@@ -4,17 +4,9 @@ import Link from "next/link";
 import { memo } from "react";
 import { motion } from "framer-motion";
 import { linkVariants } from "@constants/animation.constants";
-import { useScreenWidth } from "@hooks/index";
-import { HamburgerMenu } from "./HamburgerMenu";
 export const Nav = memo(() => {
-  const screenWidth = useScreenWidth();
-
-  if (screenWidth < 640) {
-    return <HamburgerMenu />;
-  }
-
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-8 hidden md:flex">
       {NAV_LINKS.map((link) => (
         <motion.div
           key={link.name}

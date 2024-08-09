@@ -3,6 +3,7 @@ import { memo } from "react";
 import { Nav } from "./Nav";
 import { CONTAINER_MAX_WIDTH } from "@constants/style.constants";
 import { LogoWithText } from "@components/Logo";
+import { HamburgerMenu } from "./HamburgerMenu";
 
 export const Header = memo(() => {
   return (
@@ -10,9 +11,8 @@ export const Header = memo(() => {
       <div
         className={`h-full flex items-center justify-between max-w-${CONTAINER_MAX_WIDTH}  w-full `}
       >
-        <Link href={"/"}>
-          <LogoWithText />
-        </Link>
+        <LogoWithText />
+        <HamburgerMenu />
         <Nav />
       </div>
     </header>

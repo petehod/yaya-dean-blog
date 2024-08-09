@@ -2,7 +2,6 @@
 import { linkVariants } from "@constants/animation.constants";
 import { NAV_LINKS } from "@constants/links.constants";
 import { motion } from "framer-motion";
-import { link } from "fs";
 import Link from "next/link";
 import React, { memo, useState } from "react";
 import { Hamburger } from "./Hamburger";
@@ -15,7 +14,7 @@ export const HamburgerMenu = memo(() => {
   };
 
   return (
-    <div className="relative ">
+    <div className={`relative md:hidden`}>
       <div
         className={`flex flex-col justify-between w-8 h-8 cursor-pointer z-50`}
         onClick={toggleMenu}

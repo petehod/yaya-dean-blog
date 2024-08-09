@@ -14,7 +14,8 @@ export const ArticlePreview = memo(
         whileHover={`hover`}
       >
         <Link
-          className="flex flex-col bg-white text-dark rounded-lg py-2 px-4 max-w-660"
+          prefetch={true}
+          className="flex flex-col items-start justify-center bg-dark  rounded-lg py-2 px-4  max-w-660"
           href={`${category}/${slug}`}
         >
           <h3 className={`text-1.5 `}>{title}</h3>
