@@ -4,22 +4,38 @@ import Link from "next/link";
 import { memo } from "react";
 import { motion } from "framer-motion";
 import { linkVariants } from "@constants/animation.constants";
+import { BlogPost } from "@myTypes/blog.types";
+import Image from "next/image";
+import { ArticlePreviewImage } from "./ArticlePreviewImage";
 export const ArticlePreview = memo(
-  ({ slug, category, title, createdAt }: ArticleDetails) => {
+  ({
+    slug,
+    description,
+    title,
+    date,
+    content,
+    author,
+    coverImage,
+    tags,
+  }: BlogPost) => {
     return (
       <motion.div
         key={slug}
         variants={linkVariants}
         whileTap={`tap`}
         whileHover={`hover`}
+        className="bg-dark rounded cursor-pointer p-6"
       >
         <Link
-          prefetch={true}
-          className="flex flex-col items-start justify-center bg-dark  rounded-lg py-2 px-4  max-w-660"
-          href={`${category}/${slug}`}
+          className={`flex items-start justify-start gap-4`}
+          href={`/posts/${slug}`}
         >
-          <h3 className={`text-1.5 `}>{title}</h3>
-          <p className={`font-light`}>{createdAt}</p>
+          {coverImage && <ArticlePreviewImage src={coverImage} title={title} />}
+          <div className={`flex flex-col items-start `}>
+            <h2 className="text-1.5 font-semibold mb-2 ">{title}</h2>
+            <p className=" mb-4">{description}</p>
+            <p className="text-sm ">{new Date(date).toLocaleDateString()}</p>
+          </div>
         </Link>
       </motion.div>
     );
