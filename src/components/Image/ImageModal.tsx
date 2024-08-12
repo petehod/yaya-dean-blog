@@ -23,19 +23,14 @@ export const ImageModal = ({
           style={{
             height: "100%",
             width: "100%",
-            maxHeight: "90vh",
-            maxWidth: "90vw",
+            maxHeight: "60vh",
+            maxWidth: "60vw",
           }}
           variants={linkVariants}
           whileTap={`tap`}
           whileHover={`hover`}
         >
-          <Image
-            alt={alt}
-            fill
-            className={`object-contain rounded`}
-            {...props}
-          />
+          <Image alt={alt} fill className={`object-cover rounded`} {...props} />
         </motion.div>
       </motion.div>
     </AnimatePresence>
