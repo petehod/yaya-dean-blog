@@ -1,10 +1,11 @@
-// pages/posts/[slug].tsx
+import { MDXProvider } from "@mdx-js/react";
 import { MDXRemote } from "next-mdx-remote";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { MdxLayout } from "@components/Layout";
 import { BlogPost } from "myTypes/blog.types";
 import { getPostBySlug, getAllPosts } from "@lib/posts";
 import { ArticleHeader } from "@components/Article";
+import { useMDXComponents } from "@components/mdx-components";
 
 interface PostProps {
   source: any;
@@ -12,20 +13,20 @@ interface PostProps {
 }
 
 const Post: React.FC<PostProps> = ({ source, frontMatter }) => {
+  const components = useMDXComponents({});
+
   return (
-    <MdxLayout>
-      <ArticleHeader
-        title={frontMatter.title}
-        date={frontMatter.date}
-        image={frontMatter.coverImage}
-      />
-      <article>
-        <h1 className="text-4xl font-bold">{frontMatter.title}</h1>
-        <div className="mt-4">
-          <MDXRemote {...source} />
-        </div>
-      </article>
-    </MdxLayout>
+    <MDXProvider components={components}>
+      <MdxLayout>
+        <ArticleHeader
+          title={frontMatter.title}
+          date={frontMatter.date}
+          image={frontMatter.coverImage}
+        />
+
+        <MDXRemote {...source} />
+      </MdxLayout>
+    </MDXProvider>
   );
 };
 

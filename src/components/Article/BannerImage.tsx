@@ -13,8 +13,7 @@ export const BannerImage = ({
     <div className={`relative w-full h-${height} rounded mb-6`}>
       <Image
         src={`/assets/images/${src}`}
-        objectFit="cover"
-        className="rounded"
+        className="rounded object-cover"
         alt={title}
         fill
       />

@@ -1,0 +1,2 @@
+export const DEFAULT_POST_IMAGE_HEIGHT = 400;
+export const DEFAULT_POST_IMAGE_WIDTH = `${100}%`;

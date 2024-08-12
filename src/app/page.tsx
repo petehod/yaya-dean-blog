@@ -9,7 +9,6 @@ import Link from "next/link";
 export default function Home() {
   const posts = getAllPosts();
 
-  console.log("posts", posts);
   return (
     <main
       className={`flex min-h-screen flex-col items-center max-w-${CONTAINER_MAX_WIDTH} w-full py-12`}
@@ -17,9 +16,6 @@ export default function Home() {
       <Hero />
       <h2 className="text-1.5 font-extralight mb-2">Recent Articles:</h2>
       <div className="flex flex-col justify-center gap-2">
-        {/* {articles.map((a) => (
-          <ArticlePreview key={a.slug} {...a} />
-        ))} */}
         {posts.map((post) => (
           <ArticlePreview key={post.slug} {...post} />
         ))}

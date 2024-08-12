@@ -2,7 +2,6 @@ import { memo } from "react";
 
 export const Hamburger = memo(
   ({ onOpen, onToggle }: { onOpen: boolean; onToggle: () => void }) => {
-    console.log("onOpen", onOpen);
     return (
       <div
         className={`flex flex-col justify-between w-8 h-8 cursor-pointer `}
