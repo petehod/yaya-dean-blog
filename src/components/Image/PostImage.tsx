@@ -1,7 +1,4 @@
-import {
-  DEFAULT_POST_IMAGE_HEIGHT,
-  DEFAULT_POST_IMAGE_WIDTH,
-} from "@constants/image.constants";
+import { DEFAULT_POST_IMAGE_HEIGHT, DEFAULT_POST_IMAGE_WIDTH } from "@constants/image.constants";
 import Image, { ImageProps } from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
@@ -13,12 +10,14 @@ export const PostImage = ({
   height = DEFAULT_POST_IMAGE_HEIGHT,
   containerWidth = DEFAULT_POST_IMAGE_WIDTH,
   objectFit = "cover",
+  caption,
   ...props
 }: ImageProps & {
   alt: string;
   height: number;
   containerWidth: string | number;
   objectFit: "cover" | "contain";
+  caption?: React.ReactNode;
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -43,13 +42,9 @@ export const PostImage = ({
         whileTap={`tap`}
         whileHover={`hover`}
       >
-        <Image
-          alt={alt}
-          fill
-          className={`object-${objectFit} rounded`}
-          {...props}
-        />
+        <Image alt={alt} fill className={`object-${objectFit} rounded`} {...props} />
       </motion.div>
+      <p>{caption}</p>
 
       {isModalOpen && <ImageModal onClose={closeModal} alt={alt} {...props} />}
     </>
