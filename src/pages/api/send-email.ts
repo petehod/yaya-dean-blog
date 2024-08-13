@@ -24,10 +24,14 @@ export default async function sendEmail(
 
     try {
       await sgMail.send(msg);
-      res.status(200).json({ message: "Email sent" });
+      res.status(200).json({
+        message: "Email sent",
+      });
     } catch (error) {
       console.error(error);
-      res.status(500).json({ message: "Error sending email" });
+      res.status(500).json({
+        message: "Error sending email",
+      });
     }
   } else {
     res.setHeader("Allow", ["POST"]);

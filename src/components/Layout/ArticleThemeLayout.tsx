@@ -3,7 +3,9 @@ import "../../styles/globals.css";
 import { Footer } from "@components/Footer";
 import { Header } from "@components/Header";
 import { LAYOUT_STYLE } from "@constants/layout.constants";
-const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const pjs = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+});
 
 export const ArticleThemeLayout = ({
   children,

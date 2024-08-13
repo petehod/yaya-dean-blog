@@ -40,7 +40,7 @@ export const typographyStyles = {
   p: {
     fontSize: "16px",
     lineHeight: "1.7",
-    marginBottom: "16px",
+    marginBottom: "20px",
     color: "#fff",
   },
   blockquote: {
@@ -78,9 +78,7 @@ export const typographyStyles = {
   },
   code: {
     fontFamily: "Menlo, Monaco, Consolas, 'Courier New', monospace",
-    backgroundColor: "#2c2c2c",
-    padding: "2px 4px",
-    borderRadius: "4px",
+
     fontSize: "14px",
   },
   pre: {

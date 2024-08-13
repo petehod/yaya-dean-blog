@@ -3,7 +3,12 @@ import { Breadcrumbs } from "types/breadcrumb.types";
 
 export const splitPathToBreadcrumbs = (path: string): Breadcrumbs => {
   if (!path || path === "/") {
-    return [{ name: "Home", url: "/" }];
+    return [
+      {
+        name: "Home",
+        url: "/",
+      },
+    ];
   }
 
   const segments = path.split("/").filter((segment) => segment);

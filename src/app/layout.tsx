@@ -6,7 +6,9 @@ import { Footer } from "@components/Footer";
 import { LAYOUT_STYLE } from "@constants/layout.constants";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const pjs = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "dean's blog",

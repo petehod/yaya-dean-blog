@@ -36,10 +36,15 @@ export default Post;
 export const getStaticPaths: GetStaticPaths = async () => {
   const posts = getAllPosts();
   const paths = posts.map((post) => ({
-    params: { slug: post.slug },
+    params: {
+      slug: post.slug,
+    },
   }));
 
-  return { paths, fallback: false };
+  return {
+    paths,
+    fallback: false,
+  };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {

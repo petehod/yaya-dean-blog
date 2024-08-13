@@ -19,7 +19,9 @@ const addContact = async (req: NextApiRequest, res: NextApiResponse) => {
   const { email, first_name, source }: RequestBody = req.body;
 
   if (!email || !source) {
-    res.status(400).json({ error: "Email and source are required" });
+    res.status(400).json({
+      error: "Email and source are required",
+    });
     return;
   }
 
@@ -48,7 +50,9 @@ const addContact = async (req: NextApiRequest, res: NextApiResponse) => {
     const [response, body] = await sendgridClient.request(request);
     res.status(response.statusCode).json(body);
   } catch (error) {
-    res.status(500).json({ error: "Internal Server Error" });
+    res.status(500).json({
+      error: "Internal Server Error",
+    });
   }
 };
 

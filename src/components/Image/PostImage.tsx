@@ -34,7 +34,10 @@ export const PostImage = ({
     <>
       <motion.div
         className={`relative cursor-pointer mb-4`}
-        style={{ height, width: containerWidth }}
+        style={{
+          height,
+          width: containerWidth,
+        }}
         onClick={handleImageClick}
         variants={linkVariants}
         whileTap={`tap`}

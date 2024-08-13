@@ -8,16 +8,7 @@ import { BlogPost } from "types/blog.types";
 import Image from "next/image";
 import { ArticlePreviewImage } from "./ArticlePreviewImage";
 export const ArticlePreview = memo(
-  ({
-    slug,
-    description,
-    title,
-    date,
-    content,
-    author,
-    coverImage,
-    tags,
-  }: BlogPost) => {
+  ({ slug, description, title, date, content, author, coverImage, tags }: BlogPost) => {
     return (
       <motion.div
         key={slug}
@@ -26,10 +17,7 @@ export const ArticlePreview = memo(
         whileHover={`hover`}
         className="bg-dark rounded cursor-pointer p-6"
       >
-        <Link
-          className={`flex items-start justify-start gap-4`}
-          href={`/posts/${slug}`}
-        >
+        <Link className={`flex items-start justify-start gap-4`} href={`/posts/${slug}`}>
           {coverImage && <ArticlePreviewImage src={coverImage} title={title} />}
           <div className={`flex flex-col items-start `}>
             <h2 className="text-1.5 font-semibold mb-2 ">{title}</h2>

@@ -22,7 +22,10 @@ export const NAV_LINKS = [
     name: "Guitar Loop God",
     link: GLG_LINK,
   },
-  { name: "Name Generator", link: NAME_GENERATOR_LINK },
+  {
+    name: "Name Generator",
+    link: NAME_GENERATOR_LINK,
+  },
   {
     name: "Links",
     link: LINK_TREE_LINK,

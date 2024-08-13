@@ -6,7 +6,9 @@ import { MarkdownWrapper } from "./MarkdownWrapper";
 import { Footer } from "@components/Footer";
 import { LAYOUT_STYLE } from "@constants/layout.constants";
 
-const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const pjs = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+});
 
 export const MdxLayout = memo(({ children }: { children: React.ReactNode }) => {
   return (

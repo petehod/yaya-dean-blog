@@ -9,7 +9,10 @@ import { z } from "zod";
 const emailSchema = z.string().email("Invalid email address").max(50);
 
 export const NewsletterForm = memo(() => {
-  const [userInfo, setUserInfo] = useState({ email: "", name: "Pete" });
+  const [userInfo, setUserInfo] = useState({
+    email: "",
+    name: "Pete",
+  });
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState<string | null>("");
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -37,12 +40,13 @@ export const NewsletterForm = memo(() => {
 
       if (response.ok) {
         setSuccessMessage("Thank you for signing up!");
-        setUserInfo({ email: "", name: "" });
+        setUserInfo({
+          email: "",
+          name: "",
+        });
       } else {
         const errorData = await response.json();
-        setErrorMessage(
-          errorData.message || "Signup failed. Please try again."
-        );
+        setErrorMessage(errorData.message || "Signup failed. Please try again.");
       }
     } catch (error) {
       setErrorMessage("Signup failed. Please try again.");
@@ -50,10 +54,7 @@ export const NewsletterForm = memo(() => {
   };
 
   return (
-    <form
-      className="flex flex-col items-center justify-center gap-4"
-      onSubmit={handleFormSubmit}
-    >
+    <form className="flex flex-col items-center justify-center gap-4" onSubmit={handleFormSubmit}>
       <p className="text-bold">Sign up for our newsletter</p>
       <FormInputLabelWrapper
         label={<Label text="First name" htmlFor="firstName" />}
@@ -90,8 +91,7 @@ export const NewsletterForm = memo(() => {
       />
       <ButtonOutline text="Subscribe" type="submit" />
       <p className="text-0.875 mt-4 w-80 text-left">
-        *By submitting your email, you&apos;re agreeing to let dean get in touch
-        with you.
+        *By submitting your email, you&apos;re agreeing to let dean get in touch with you.
       </p>
       {successMessage && <p className="text-green-500">{successMessage}</p>}
       {errorMessage && <p className="text-red-500">{errorMessage}</p>}

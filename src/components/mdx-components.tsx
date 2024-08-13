@@ -2,6 +2,7 @@
 import type { MDXComponents } from "mdx/types";
 import { ButtonOutline } from "./Button";
 import { PostImage } from "./Image";
+import { CodeBlock } from "./CodeBlock";
 import { typographyStyles } from "@styles/typography.styles";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -19,16 +20,13 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ul: ({ children }) => <ul style={typographyStyles.ul}>{children}</ul>,
     ol: ({ children }) => <ol style={typographyStyles.ol}>{children}</ol>,
     li: ({ children }) => <li style={typographyStyles.li}>{children}</li>,
-    strong: ({ children }) => (
-      <strong style={typographyStyles.strong}>{children}</strong>
-    ),
+    strong: ({ children }) => <strong style={typographyStyles.strong}>{children}</strong>,
     em: ({ children }) => <em style={typographyStyles.em}>{children}</em>,
 
-    code: ({ children }) => (
-      <code style={typographyStyles.code}>{children}</code>
-    ),
+    code: ({ children }) => <code style={typographyStyles.code}>{children}</code>,
     ButtonOutline,
     PostImage,
+    CodeBlock,
     ...components,
   };
 }
