@@ -1,4 +1,4 @@
-import { Articles } from "@myTypes/article.types";
+import { Articles } from "types/article.types";
 
 export const articles: Articles = [
   {

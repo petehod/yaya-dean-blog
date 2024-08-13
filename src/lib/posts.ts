@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
-import { BlogPost } from "@myTypes/blog.types";
+import { BlogPost } from "types/blog.types";
 
 const postsDirectory = path.join(process.cwd(), "src/posts");
 

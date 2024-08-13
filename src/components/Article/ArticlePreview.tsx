@@ -1,10 +1,10 @@
 "use client";
-import { ArticleDetails } from "@myTypes/article.types";
+import { ArticleDetails } from "types/article.types";
 import Link from "next/link";
 import { memo } from "react";
 import { motion } from "framer-motion";
 import { linkVariants } from "@constants/animation.constants";
-import { BlogPost } from "@myTypes/blog.types";
+import { BlogPost } from "types/blog.types";
 import Image from "next/image";
 import { ArticlePreviewImage } from "./ArticlePreviewImage";
 export const ArticlePreview = memo(

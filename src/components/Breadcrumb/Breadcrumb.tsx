@@ -1,6 +1,6 @@
 "use client";
 import { linkVariants } from "@constants/animation.constants";
-import { Breadcrumbs } from "@myTypes/breadcrumb.types";
+import { Breadcrumbs } from "types/breadcrumb.types";
 import { motion } from "framer-motion";
 import Link from "next/link";
 export const Breadcrumb = ({ breadcrumbs }: { breadcrumbs: Breadcrumbs }) => {

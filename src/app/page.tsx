@@ -3,7 +3,7 @@ import { Hero } from "@components/Hero";
 import { CONTAINER_MAX_WIDTH } from "@constants/style.constants";
 import { articles } from "@data/articles.data";
 import { getAllPosts } from "@lib/posts";
-import { BlogPost } from "@myTypes/blog.types";
+import { BlogPost } from "types/blog.types";
 import { GetStaticProps } from "next";
 import Link from "next/link";
 export default function Home() {

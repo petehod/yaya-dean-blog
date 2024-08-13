@@ -1,5 +1,5 @@
 import { HOME_LINK } from "@constants/links.constants";
-import { Breadcrumbs } from "@myTypes/breadcrumb.types";
+import { Breadcrumbs } from "types/breadcrumb.types";
 
 export const splitPathToBreadcrumbs = (path: string): Breadcrumbs => {
   if (!path || path === "/") {
