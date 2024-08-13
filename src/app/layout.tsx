@@ -4,6 +4,7 @@ import "../styles/globals.css";
 import { Header } from "@components/Header";
 import { Footer } from "@components/Footer";
 import { LAYOUT_STYLE } from "@constants/layout.constants";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -19,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {process.env.NODE_ENV === "production" && (
+        <GoogleAnalytics gaId="G-ZKXP22XP2V" />
+      )}
       <body
         className={`${pjs.className} ${LAYOUT_STYLE} gradient-bg px-4 md:px-6`}
       >
