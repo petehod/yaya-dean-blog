@@ -1,5 +1,3 @@
-// app/components/typography.styles.ts (or components/typography.styles.ts)
-
 export const typographyStyles = {
   h1: {
     fontSize: "36px",
@@ -38,7 +36,7 @@ export const typographyStyles = {
     lineHeight: "1.6",
   },
   p: {
-    fontSize: "16px",
+    fontSize: "18px",
     lineHeight: "1.7",
     marginBottom: "20px",
     color: "#fff",
@@ -62,13 +60,14 @@ export const typographyStyles = {
   ol: {
     listStyleType: "decimal",
     marginLeft: "20px",
+
     marginBottom: "16px",
     paddingLeft: "20px",
   },
   li: {
-    fontSize: "16px",
+    fontSize: "18px",
     lineHeight: "1.7",
-    marginBottom: "8px",
+    textAlign: "left",
   },
   strong: {
     fontWeight: "bold",

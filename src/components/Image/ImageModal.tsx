@@ -45,7 +45,7 @@ export const ImageModal = ({
           whileTap={`tap`}
           whileHover={`hover`}
         >
-          <Image alt={alt} fill className={`object-cover rounded`} {...props} />
+          <Image alt={alt} fill className={`object-contain rounded`} {...props} />
         </motion.div>
       </motion.div>
     </AnimatePresence>

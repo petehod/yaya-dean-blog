@@ -4,6 +4,9 @@ import { ButtonOutline } from "./Button";
 import { PostImage } from "./Image";
 import { CodeBlock } from "./CodeBlock";
 import { Spacer } from "./Spacer";
+import { ColumnContainer } from "./Column";
+import { ItalicText } from "./Text";
+import { List } from "./Lists";
 import { typographyStyles } from "@styles/typography.styles";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -27,7 +30,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     code: ({ children }) => <code style={typographyStyles.code}>{children}</code>,
     ButtonOutline,
     PostImage,
+    ColumnContainer,
+    ItalicText,
     Spacer,
+    List,
     CodeBlock,
     ...components,
   };

@@ -7,3 +7,10 @@ export function formatHeaderDate(dateString: string): string {
   };
   return date.toLocaleDateString("en-US", options);
 }
+
+export const capitalizeEachWord = (str: string) => {
+  return str
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+};
