@@ -41,17 +41,52 @@ It dawned on me that songs can be visualized as objects. Each song has a set of 
 
 ## The Impact of Automation
 
-In software development, efficiency is key. One of the most valuable lessons I’ve learned as a software engineer is the importance of automating repetitive tasks. By automating what can be automated, we free up our mental bandwidth for more complex and creative challenges.
+In software development, it is easy to automate repetitive tasks. We automate these low-priority tasks to free up our mental bandwidth for more complex and creative challenges. For example, it is common to write a function that capitalizes first letter in a word, like this
 
-James Clear, in his classic <a start target="\_blank" href="https://a.co/d/19jZtNM" style={{textDecoration: "underline", fontWeight: "bold"}}>Atomic Habits</a>, we discusses a strategy he calls addition by subtraction:
+<CodeBlock caption={"Writing reusable code like this makes it suprisingly easy to build powerful applications that are easy to maintain."}>
+```ts
+function capitalizeFirstLetter(str: string): string {
+    if (!str) return str;
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// In use
+const title = "hello world";
+const capitalizedTitle = capitalizeFirstLetter(title);
+console.log(capitalizedTitle); // Output: "Hello world"
+
+```
+</CodeBlock>
+
+## Focusing on the Essentials
+James Clear, in his classic <a start target="\_blank" href="https://a.co/d/19jZtNM" style={{textDecoration: "underline", fontWeight: "bold"}}>Atomic Habits</a>, discusses a strategy he calls addition by subtraction:
 
 > The Japanese companies looked for every point of friction in the manufacturing process and eliminated it. As they subtracted wasted effort, they added customers and revenue. Similarily, when we remove the points of friction that sap our time and energy, we can achieve more with less effort (154).
 
-Pareto's Principle says that 20% of your inputs generate you 80% of your outputs. For example, 20% of beer drinkers drink 80% of all beer. 20% of murderes commit 80% of all murders. 20% of all producers get 80% of the placements (although I think this is even more skewed). If you are interested, I highly recommend reading the book
+This idea ties in well with <a style={{textDecoration: "underline", fontWeight: "bold"}} target="_blank" href="https://en.wikipedia.org/wiki/Pareto_principle">_Pareto’s Principle_</a> , which says that 20% of your inputs generate 80% of your outputs. For example, 20% of beer drinkers consume 80% of all beer, and 20% of producers get 80% of the placements (although I think the producer one is even more skewed). If you’re interested, I highly recommend reading the book <a style={{textDecoration: "underline", fontWeight: "bold"}} target="\_blank" href="https://a.co/d/bHL2K6q">The 80/20 Principle</a>
 
-This idea ties in well with Pareto’s Principle, which says that 20% of your inputs generate 80% of your outputs. For example, 20% of beer drinkers consume 80% of all beer, and 20% of producers get 80% of the placements (although I think this is even more skewed). If you’re interested, I highly recommend reading the book <a style={{textDecoration: "underline", fontWeight: "bold"}} target="\_blank" href="https://a.co/d/bHL2K6q">The 80/20 Principle</a>
+In music production, this principle highlights that some inputs (keys in the object) matter a lot more than others. Here's a hot take: chord progressions, tempo, instruments DO NOT MATTER! By this I mean as long as you're selecting a high-quality input (a proven chord progression, a proven instrument, etc.) you can get away with picking things before you write any music. By automating the less critical aspects, we can dedicate our focus to the things that truly make a difference, like melody writing and dynamics.
 
-In music production, this principle highlights that some inputs matter a lot more than others. While key, tempo, chord progressions, and even instruments are important, elements like melody, dynamics, and feel are crucial. By automating the less critical aspects, we can dedicate our focus to the things that truly make a difference, like melody writing and dynamics.
+For example, before I even touch my guitar, I’ll decide on the tempo, key, and basic chord progression. This sets the foundation for me to write banging melodies over. I even automate simple tasks like coming up with file names. You can use the same tool for free <a style={{textDecoration: "underline"}} target="\_blank" href="https://namegenerator.yayadean.com">**here**</a>
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/G4FvAini-K8?si=OIhE08xZuxzNgbMa"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+  className="mb-8"
+></iframe>
+
+### Recap
+
+1. Songs/music are just objects with key/value pairs.
+2. Some of these key/value pairs are more important than others.
+3. We can automate low-priority key/value pairs by preselecting them before we write _any_ music.
+4. Put all of our focus into high-priority key/value pairs (melody, dynamics, etc).
 
 <ColumnContainer
   items={[
@@ -64,10 +99,6 @@ In music production, this principle highlights that some inputs matter a lot mor
 />
 
 <Spacer size="lg" />
-
-When I approach music production and writing guitar loops, I apply the same principle. Many aspects of a song—like tempo, key, chord progressions, and scales—can be predetermined. By setting these parameters in advance, I create a sort of “assembly line” for producing guitar loops. This approach allows me to focus on the parts of music that truly require human creativity, like crafting melodies and playing those melodies with emotion.
-
-For example, before I even touch my guitar, I’ll decide on the tempo, key, and basic chord progression. This is like setting up a skeleton or framework that I can build upon. I even automate simple tasks like coming up with file names. You can use the same tool for free <a style={{textDecoration: "underline"}} target="\_blank" href="https://namegenerator.yayadean.com">**here**</a>
 
 <ColumnContainer
   items={[
@@ -96,4 +127,7 @@ For example, before I even touch my guitar, I’ll decide on the tempo, key, and
 
 Learning software development has fundamentally changed the way I approach music. It’s taught me to value efficiency and to focus my creative energy on the aspects of music that can’t be automated. By setting up an “assembly line” for guitar loop production, I’m able to streamline the process and produce music more quickly, all while ensuring that the most important part—the melody—gets the attention it deserves.
 
+It's important to note that I don't do this everytime I write music. There defintely NOTE ABOUT NOT DOING IT EVERYTIME.
+
 <Spacer size="lg" />
+```
