@@ -1,13 +1,12 @@
 ---
 title: "How Learning JavaScript Changed How I Write Music"
 date: "2024-08-09"
-description: "Songs are just objects man."
+description: "Songs are just objects, man."
 slug: "how-javascript-changed-how-i-write-music"
 coverImage: "assembly-line.jpg"
 ---
 
-Becoming a software engineer changed the way I think about music. In software development, there are data structures called objects, which can be thought of as a collection of
-key and value pairs. These keys and value pairs are wrapped inside of `{}` (curly braces) and look something like this:
+Becoming a software engineer changed my approach to music. In programming, there’s a concept known as objects. These are data structures that organize information as key-value pairs. Imagine a dictionary where each word (key) has a definition (value). In code, these pairs are enclosed in curly braces {} and might look something like this:
 
 <CodeBlock caption="Here are some details about me represented as an object. Name, age, and occupation are the keys and Dean, 25, and Software Engineer are the values.">
     ```ts
@@ -19,7 +18,7 @@ key and value pairs. These keys and value pairs are wrapped inside of `{}` (curl
     ```
 </CodeBlock>
 
-What I realized is that _songs_ can be thought of as objects. There are a set of keys that describe a song, and each key has a value. Here is an example of a song represented as an object:
+It dawned on me that songs can be visualized as objects. Each song has a set of attributes—its keys—that define it, with corresponding values that describe those attributes. Here’s how a song might look when represented as an object:
 
 <CodeBlock caption={`"Baby" by Justin Bieber represented as an object`}>
     ```ts
@@ -31,8 +30,8 @@ What I realized is that _songs_ can be thought of as objects. There are a set of
         key: "Eb Major",
         chord_progression: "Eb, C-, Ab, Bb",
         time_signature: "4/4",
-        melody: ?? 
-        // There are many more key/value pairs that could be added. 
+        melody: ??
+        // There are many more key/value pairs that could be added.
         // This is just a small subset.
     }
     ```
@@ -40,38 +39,35 @@ What I realized is that _songs_ can be thought of as objects. There are a set of
 
 <Spacer size={"md"} />
 
-## Automating the Process
+## The Impact of Automation
 
-In software development, efficiency is key. One of the most valuable lessons I’ve learned as a software engineer is the importance of automating repetitive tasks.
-By automating what can be automated, we free up our mental bandwidth for more complex and creative challenges.
+In software development, efficiency is key. One of the most valuable lessons I’ve learned as a software engineer is the importance of automating repetitive tasks. By automating what can be automated, we free up our mental bandwidth for more complex and creative challenges.
 
-When I approach music production and writing guitar loops, I apply the same principle. Many aspects of a song—like tempo, key, chord progressions, and scales—can be predetermined. By setting
-these parameters in advance, I create a sort of “assembly line” for producing guitar loops. This approach allows me to focus on the parts of music that truly require human creativity, like crafting melodies
-and playing those melodies with emotion.
+James Clear, in his classic <a start target="\_blank" href="https://a.co/d/19jZtNM" style={{textDecoration: "underline", fontWeight: "bold"}}>Atomic Habits</a>, we discusses a strategy he calls addition by subtraction:
 
-For example, before I even touch my guitar, I’ll decide on the tempo, key, and basic chord progression. This is like setting up a skeleton or framework that
-I can build upon. I'll even automate things as simple as coming up with the name for my file.
-You can use the same tool for free <a style={{textDecoration: "underline"}} target="\_blank" href="https://namegenerator.yayadean.com">**here**</a>
+> The Japanese companies looked for every point of friction in the manufacturing process and eliminated it. As they subtracted wasted effort, they added customers and revenue. Similarily, when we remove the points of friction that sap our time and energy, we can achieve more with less effort (154).
 
-<Spacer size={"sm"} />
+Pareto's Principle says that 20% of your inputs generate you 80% of your outputs. For example, 20% of beer drinkers drink 80% of all beer. 20% of murderes commit 80% of all murders. 20% of all producers get 80% of the placements (although I think this is even more skewed). If you are interested, I highly recommend reading the book
 
-<PostImage
-  alt="dean's name generator for coming up with file names"
-  src="/assets/images/name-generator.png"
-  caption="Free tool for generating file names"
+This idea ties in well with Pareto’s Principle, which says that 20% of your inputs generate 80% of your outputs. For example, 20% of beer drinkers consume 80% of all beer, and 20% of producers get 80% of the placements (although I think this is even more skewed). If you’re interested, I highly recommend reading the book <a style={{textDecoration: "underline", fontWeight: "bold"}} target="\_blank" href="https://a.co/d/bHL2K6q">The 80/20 Principle</a>
+
+In music production, this principle highlights that some inputs matter a lot more than others. While key, tempo, chord progressions, and even instruments are important, elements like melody, dynamics, and feel are crucial. By automating the less critical aspects, we can dedicate our focus to the things that truly make a difference, like melody writing and dynamics.
+
+<ColumnContainer
+  items={[
+    <List
+      title={"Low importance keys"}
+      items={["tempo", "chords", "scales", "instruments", "many others..."]}
+    />,
+    <List title={"High importance keys"} items={["melody", "timing", "dynamics", "emotion"]} />,
+  ]}
 />
 
-<Spacer size={"lg"} />
+<Spacer size="lg" />
 
-## The Art of Melody
+When I approach music production and writing guitar loops, I apply the same principle. Many aspects of a song—like tempo, key, chord progressions, and scales—can be predetermined. By setting these parameters in advance, I create a sort of “assembly line” for producing guitar loops. This approach allows me to focus on the parts of music that truly require human creativity, like crafting melodies and playing those melodies with emotion.
 
-In software development, most things can be reduced to a simple algorithm. Music, in many ways, is the same but there are elements of music that are hard to quanitfy, such as melody or dynamics.
-For one, melodies can be copyrighted (although even that is up for debate. See this article on <a
-style={{ textDecoration: "underline" }}
-target="\_blank"
-href="https://www.independent.co.uk/tech/music-copyright-algorithm-lawsuit-damien-riehl-a9364536.html"> Independent</a>).
-But more importantly, melody is where we can deploy things that are hard to quanitfy, like emotion and feeling. These factors are called _dynamics_, and they are what take a song/melody from
-good to great. Dynamics, in my opinion are the most important part of music, and I try to spend as much focus as possible on these elements.
+For example, before I even touch my guitar, I’ll decide on the tempo, key, and basic chord progression. This is like setting up a skeleton or framework that I can build upon. I even automate simple tasks like coming up with file names. You can use the same tool for free <a style={{textDecoration: "underline"}} target="\_blank" href="https://namegenerator.yayadean.com">**here**</a>
 
 <ColumnContainer
   items={[
@@ -86,22 +82,18 @@ good to great. Dynamics, in my opinion are the most important part of music, and
   ]}
 />
 
+<Spacer size={"sm"} />
+
+<PostImage
+  alt="dean's name generator for coming up with file names"
+  src="/assets/images/name-generator.png"
+  caption="Free tool for generating file names"
+/>
+
 <Spacer size={"lg"} />
-
-## Speeding Up Production
-
-By automating the more predictable elements of a song, I’m able to speed up the production process significantly. This “assembly line” approach allows me to pound out melodies faster than I ever could
-before. I no longer have to spend 30+ minutes deciding on a chord progression or figuring out the right key. Instead, I can focus on what really matters: making the melody as compelling as possible and playing
-it with the best dynamics I can.
-
-Loops used to take me an hour to make, but when I started automating the process, I am able to make the loops in 5-10 minutes.
-
-<Spacer size={"md"} />
 
 ## Conclusion
 
-Learning software development has fundamentally changed the way I approach music. It’s taught me to value efficiency and to focus my creative energy on the aspects of music that can’t be automated.
-By setting up an “assembly line” for guitar loop production, I’m able to streamline the process and produce music more quickly, all while ensuring that the most important part—the melody—gets the
-attention it deserves.
+Learning software development has fundamentally changed the way I approach music. It’s taught me to value efficiency and to focus my creative energy on the aspects of music that can’t be automated. By setting up an “assembly line” for guitar loop production, I’m able to streamline the process and produce music more quickly, all while ensuring that the most important part—the melody—gets the attention it deserves.
 
-<Spacer size={"lg"} />
+<Spacer size="lg" />
