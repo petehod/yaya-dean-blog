@@ -8,7 +8,7 @@ interface CodeBlockProps {
 
 export const CodeBlock: React.FC<CodeBlockProps> = ({ children, caption }) => {
   return (
-    <div className={`w-full md:max-w-660 mb-6`}>
+    <div className={`w-full md:max-w-660 mb-8`}>
       <pre className="bg-gray-900  p-4 rounded-md overflow-auto mb-2">
         <code>{children}</code>
       </pre>

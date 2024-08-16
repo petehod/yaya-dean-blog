@@ -7,6 +7,7 @@ import { Spacer } from "./Spacer";
 import { ColumnContainer } from "./Column";
 import { ItalicText } from "./Text";
 import { List } from "./Lists";
+import { ArticleSignature } from "./Article";
 import { typographyStyles } from "@styles/typography.styles";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -33,6 +34,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ColumnContainer,
     ItalicText,
     Spacer,
+    ArticleSignature,
     List,
     CodeBlock,
     ...components,

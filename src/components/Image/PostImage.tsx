@@ -30,7 +30,7 @@ export const PostImage = ({
   };
 
   return (
-    <>
+    <div className={`w-full mb-8`}>
       <motion.div
         className={`relative cursor-pointer mb-4`}
         style={{
@@ -47,6 +47,6 @@ export const PostImage = ({
       <p>{caption}</p>
 
       {isModalOpen && <ImageModal onClose={closeModal} alt={alt} {...props} />}
-    </>
+    </div>
   );
 };
