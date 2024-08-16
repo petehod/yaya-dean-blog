@@ -7,7 +7,10 @@ coverImage: "assembly-line.jpg"
 ---
 
 {/* TODO: Make more interesting */}
-Becoming a software engineer changed my approach to music. In programming, there’s a concept known as objects. These are data structures that organize information as key-value pairs. Imagine a dictionary where each word (key) has a definition (value). In code, these pairs are enclosed in curly braces {} and might look something like this:
+
+What if I told you that the secret to writing your next great melody might lie not in your guitar or DAW, but in your code editor? As a software engineer, I discovered that the logic behind writing efficient code has a surprising connection to crafting exquisite music. And it all starts with one simple idea: Songs are just objects.
+
+In programming, there’s a concept known as objects. Objects are data structures that organize information as key-value pairs. Imagine a dictionary where each word (key) has a definition (value). In code, these pairs are enclosed in curly braces {} and might look something like this:
 
 <CodeBlock caption="Here are some details about me represented as an object. Name, age, and occupation are the keys and Dean, 25, and Software Engineer are the values.">
     ```ts
@@ -19,7 +22,7 @@ Becoming a software engineer changed my approach to music. In programming, there
     ```
 </CodeBlock>
 
-It dawned on me that songs can be visualized as objects. Each song has a set of attributes—its keys—that define it, with corresponding values that describe those attributes. Here’s how a song might look when represented as an object:
+It dawned on me that songs can be visualized as objects. Each song has a set of attributes, its keys, that define it, with corresponding values that describe those attributes. Here’s how a song might look when represented as an object:
 
 <CodeBlock caption={`"Baby" by Justin Bieber represented as an object`}>
     ```ts
@@ -67,20 +70,24 @@ James Clear, in his classic <a  target="\_blank" href="https://a.co/d/19jZtNM" s
 
 This idea ties in well with <a style={{textDecoration: "underline", fontWeight: "bold"}} target="_blank" href="https://en.wikipedia.org/wiki/Pareto_principle">_Pareto’s Principle_</a> , which says that 20% of your inputs generate 80% of your outputs. For example, 20% of beer drinkers consume 80% of all beer, and 20% of producers get 80% of the placements (although I think the producer one is even more skewed). I highly recommend reading the book <a style={{textDecoration: "underline", fontWeight: "bold"}} target="\_blank" href="https://a.co/d/bHL2K6q">The 80/20 Principle,</a> which goes more in detail about Pareto's Principle.
 
-In music production, Pareto's Principle highlights that some inputs (the keys in an object) matter a lot more than others. Here is a list of what I believe are low-importance keys and high-importance keys:
+### _What does all of this have to do with music?_
+
+In music production, Pareto's Principle highlights that some inputs matter a lot more than others. Here is a list of what I believe are low-importance inputs and high-importance inputs:
 
 <ColumnContainer
   items={[
     <List
-      title={"Low importance keys"}
+      title={"Low importance inputs"}
       subtitle="(what we can automate)"
       items={["tempo", "chords", "scales", "instruments", "many others..."]}
     />,
-    <List title={"High importance keys"} subtitle="(what we shouldn't automate)" items={["melody", "timing", "dynamics", "emotion"]} />,
+    <List title={"High importance inputs"} subtitle="(what we shouldn't automate)" items={["melody", "timing", "dynamics", "emotion"]} />,
   ]}
 />
 
-Here's something that took me too long to realize: chord progressions, tempo, and instruments DO NOT MATTER! By this I mean as long as you're selecting a high-quality input, (a proven chord progression, a proven instrument, etc.) you can get away with deciding things before you write any music. By automating the less critical aspects, we can dedicate our focus to the things that truly make a difference, like melody writing and dynamics.
+Here’s something that took me too long to realize: chord progressions, tempo, and instruments DO NOT MATTER! By this, I mean as long as you’re selecting a high-quality input (a proven chord progression, a reliable instrument, etc.), you can get away with deciding on these things before you write any music. Chord progressions, picking patterns, and rhythms can be copied, shared, and reused across countless songs without legal issues.
+
+However, melodies are different. Melodies are unique (hopfully), emotional, and most importantly, they can be copyrighted. Because of this, it’s crucial to put as much of our focus on crafting a killer, original melody as we can.
 
 Before I even touch my guitar, I’ll decide on the tempo, key, and basic chord progression. This sets the foundation for me to write banging melodies over. I even automate simple tasks like coming up with file names. You can use the same tool for free <a style={{textDecoration: "underline"}} target="\_blank" href="https://namegenerator.yayadean.com">**here**</a>
 
@@ -94,7 +101,7 @@ Before I even touch my guitar, I’ll decide on the tempo, key, and basic chord 
 
 
 
-### Example: Automated Loop Making
+### Example: Automated Loop Making in Action
 <iframe
   width="560"
   height="315"
@@ -116,6 +123,8 @@ Before I even touch my guitar, I’ll decide on the tempo, key, and basic chord 
 2. Some of these key/value pairs are more important than others.
 3. We can automate low-priority key/value pairs by preselecting them before we write _any_ music.
 4. Put all of our focus into high-priority key/value pairs (melody, dynamics, etc).
+
+Do this, and not only will you write insane music, you'll do it in a fraction of the time.
 
 **It's important to keep in mind that music should be fun! I do not write music like an assembly line everytime I make music, I just do it when I want to be fast 😅 :]]]]]]**
 
