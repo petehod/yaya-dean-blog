@@ -11,6 +11,7 @@ export const PostImage = ({
   containerWidth = DEFAULT_POST_IMAGE_WIDTH,
   objectFit = "cover",
   caption,
+  containerMargin = "mb-4",
   ...props
 }: ImageProps & {
   alt: string;
@@ -18,6 +19,7 @@ export const PostImage = ({
   containerWidth: string | number;
   objectFit: "cover" | "contain";
   caption?: React.ReactNode;
+  containerMargin?: string;
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -30,9 +32,9 @@ export const PostImage = ({
   };
 
   return (
-    <div className={`w-full mb-4`}>
+    <div className={`w-full mb-4 px-4`}>
       <motion.div
-        className={`relative cursor-pointer mb-4`}
+        className={`relative cursor-pointer ${containerMargin}`}
         style={{
           height,
           width: containerWidth,
@@ -42,7 +44,12 @@ export const PostImage = ({
         whileTap={`tap`}
         whileHover={`hover`}
       >
-        <Image alt={alt} fill className={`object-${objectFit} rounded`} {...props} />
+        <Image
+          alt={alt}
+          fill
+          className={`object-cover md:object-${objectFit} rounded`}
+          {...props}
+        />
       </motion.div>
       {caption}
 

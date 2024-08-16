@@ -38,8 +38,8 @@ export const ImageModal = ({
           style={{
             height: "100%",
             width: "100%",
-            maxHeight: "60vh",
-            maxWidth: "60vw",
+            maxHeight: "90vh",
+            maxWidth: "90vw",
           }}
           variants={linkVariants}
           whileTap={`tap`}

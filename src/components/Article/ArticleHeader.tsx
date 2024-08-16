@@ -14,7 +14,7 @@ export const ArticleHeader = memo(
     const formattedDate = formatHeaderDate(date);
 
     return (
-      <div className="flex flex-col w-full max-w-60  pt-2 mb-8">
+      <div className="flex flex-col w-full max-w-60  pt-2 mb-4  ">
         <Breadcrumb breadcrumbs={breadcrumbs} />
 
         <div className={`mt-4`}>
