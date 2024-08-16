@@ -9,12 +9,14 @@ export const typographyStyles = {
     fontSize: "30px",
     fontWeight: "bold",
     marginBottom: "20px",
+    marginTop: "8px",
     lineHeight: "1.3",
   },
   h3: {
     fontSize: "24px",
     fontWeight: "semi-bold",
     marginBottom: "18px",
+    marginTop: "4px",
     lineHeight: "1.4",
   },
   h4: {
@@ -67,7 +69,6 @@ export const typographyStyles = {
   li: {
     fontSize: "18px",
     lineHeight: "1.7",
-    textAlign: "left",
   },
   strong: {
     fontWeight: "bold",

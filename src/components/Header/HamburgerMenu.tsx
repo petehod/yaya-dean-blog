@@ -16,7 +16,7 @@ export const HamburgerMenu = memo(() => {
   return (
     <div className={`relative md:hidden`}>
       <div
-        className={`flex flex-col justify-between w-8 h-8 cursor-pointer z-50`}
+        className={`flex flex-col justify-between w-8 h-8 cursor-pointer   z-50 ${isOpen ? "fixed top-4 right-4" : ""}`}
         onClick={toggleMenu}
       >
         <Hamburger onOpen={isOpen} onToggle={toggleMenu} />

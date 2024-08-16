@@ -7,7 +7,7 @@ import { HamburgerMenu } from "./HamburgerMenu";
 
 export const Header = memo(() => {
   return (
-    <header className={`w-full h-20 flex justify-center `}>
+    <header className={`w-full h-20 flex justify-center z-50`}>
       <div
         className={`h-full flex items-center justify-between max-w-${CONTAINER_MAX_WIDTH}  w-full `}
       >

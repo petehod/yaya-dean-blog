@@ -9,6 +9,7 @@ import { ItalicText } from "./Text";
 import { List } from "./Lists";
 import { ArticleSignature } from "./Article";
 import { typographyStyles } from "@styles/typography.styles";
+import { MyLink } from "./Link";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -27,7 +28,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     li: ({ children }) => <li style={typographyStyles.li}>{children}</li>,
     strong: ({ children }) => <strong style={typographyStyles.strong}>{children}</strong>,
     em: ({ children }) => <em style={typographyStyles.em}>{children}</em>,
-
     code: ({ children }) => <code style={typographyStyles.code}>{children}</code>,
     ButtonOutline,
     PostImage,
@@ -36,6 +36,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Spacer,
     ArticleSignature,
     List,
+    MyLink,
     CodeBlock,
     ...components,
   };

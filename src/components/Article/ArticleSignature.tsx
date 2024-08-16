@@ -3,15 +3,21 @@ import { useEffect, useState } from "react";
 import { exquisiteWords } from "@data/squisite.data";
 import { randomIndex } from "@utils/randomIndex.utils";
 
-const style = "text-1.125 font-semibold mb-2";
-
-export const ArticleSignature = () => {
+const useExquisite = () => {
   const [exquisite, setExquisite] = useState<string | null>(null);
 
   useEffect(() => {
     const randomWord = exquisiteWords[randomIndex(exquisiteWords.length)];
     setExquisite(randomWord);
   }, []);
+
+  return exquisite;
+};
+
+const style = "text-1.125 font-semibold mb-2";
+
+export const ArticleSignature = () => {
+  const exquisite = useExquisite();
 
   const includeN = (word: string): string => {
     if (!word) return "";
@@ -21,7 +27,7 @@ export const ArticleSignature = () => {
   };
 
   return (
-    <div className="flex-col w-full items-end justify-end text-end pr-24 mt-8">
+    <div className="flex-col w-full text-center md:text-end md:pr-24 mt-8">
       {exquisite && (
         <p className={style}>
           Have a{includeN(exquisite)} {exquisite}quisite day 🦍
