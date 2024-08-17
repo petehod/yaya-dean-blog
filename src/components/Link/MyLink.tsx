@@ -4,7 +4,7 @@ const defaultStyle = `font-semibold underline`;
 
 export const MyLink = ({ children, ...props }: LinkProps & { children: React.ReactNode }) => {
   return (
-    <Link className={defaultStyle} {...props}>
+    <Link className={defaultStyle} target="_blank" {...props}>
       {children}
     </Link>
   );

@@ -1,4 +1,6 @@
 "use client";
+import DeanPopout from "@components/Popout/DeanPopout";
+import Popout from "@components/Popout/Popout";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
@@ -34,6 +36,7 @@ const ScrollProgress = () => {
         animate={{ width: `${scrollWidth}%` }}
         transition={{ ease: "easeOut", duration: 0.2 }}
       />
+      {scrollWidth > 50 && <Popout popoutElement={<DeanPopout />} />}
     </div>
   );
 };

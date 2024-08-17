@@ -27,7 +27,8 @@
       "@constants/*": ["./constants/*"],
       "@data/*": ["./data/*"],
       "@myTypes/*": ["./myTypes/*"],
-      "@lib/*": ["./lib/*"]
+      "@lib/*": ["./lib/*"],
+      "@public/*": ["../public/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

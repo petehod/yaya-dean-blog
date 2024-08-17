@@ -1,0 +1,1 @@
+export const DEFAULT_POPOUT_TIMEOUT = 4000;
