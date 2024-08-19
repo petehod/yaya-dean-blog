@@ -14,7 +14,7 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center max-w-${CONTAINER_MAX_WIDTH} w-full py-12`}
     >
       <Hero />
-      <h2 className="text-1.5 font-extralight mb-2">Recent Articles:</h2>
+
       <div className="flex flex-col justify-center gap-2">
         {posts.map((post) => (
           <ArticlePreview key={post.slug} {...post} />
