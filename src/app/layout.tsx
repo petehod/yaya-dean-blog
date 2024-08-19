@@ -22,12 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {process.env.NODE_ENV === "production" && (
-        <GoogleAnalytics gaId="G-ZKXP22XP2V" />
-      )}
-      <body
-        className={`${pjs.className} ${LAYOUT_STYLE} gradient-bg px-4 md:px-6`}
-      >
+      {process.env.NODE_ENV === "production" && <GoogleAnalytics gaId="G-ZKXP22XP2V" />}
+      <body className={`${pjs.className} ${LAYOUT_STYLE} gradient-bg px-4 md:px-6`}>
         <Header />
         {children}
         <Footer />

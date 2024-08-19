@@ -6,6 +6,7 @@ import { BlogPost } from "types/blog.types";
 import { getPostBySlug, getAllPosts } from "@lib/posts";
 import { ArticleHeader } from "@components/Article";
 import { useMDXComponents } from "@components/mdx-components";
+import Head from "next/head";
 
 interface PostProps {
   source: any;
@@ -17,15 +18,21 @@ const Post: React.FC<PostProps> = ({ source, frontMatter }) => {
 
   return (
     <MDXProvider components={components}>
-      <MdxLayout>
-        <ArticleHeader
-          title={frontMatter.title}
-          date={frontMatter.date}
-          image={frontMatter.coverImage}
-        />
+      <>
+        <Head>
+          <title key={"postTitle"}>{frontMatter.title}</title>
+          <meta name="description" content={frontMatter.description} />
+        </Head>
+        <MdxLayout>
+          <ArticleHeader
+            title={frontMatter.title}
+            date={frontMatter.date}
+            image={frontMatter.coverImage}
+          />
 
-        <MDXRemote {...source} />
-      </MdxLayout>
+          <MDXRemote {...source} />
+        </MdxLayout>
+      </>
     </MDXProvider>
   );
 };
