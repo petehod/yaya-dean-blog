@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Dean from "@public/assets/images/svg/dean-avatar.svg";
 import { MyLink } from "@components/Link";
 import { GLG_LINK } from "@constants/links.constants";
 import Image from "next/image";
@@ -25,7 +24,12 @@ const DeanPopout = () => {
       }}
     >
       <div className="relative h-24 w-24 mt-auto">
-        <Dean />
+        <Image
+          alt="dean as a cartoon avatar in the style of Disney"
+          src={"/assets/images/dean-avatar.png"}
+          height={96}
+          width={96}
+        />
       </div>
       <div className={`bg-white rounded text-dark w-full p-2 `}>
         <p className="font-semibold">Guitar Loop God is now live!</p>
