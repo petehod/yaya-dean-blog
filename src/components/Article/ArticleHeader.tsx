@@ -10,7 +10,7 @@ import { formatHeaderDate } from "@utils/textFormat.utils";
 export const ArticleHeader = memo(
   ({ title, date, image }: { title: string; date: string; image?: string }) => {
     const breadcrumbs = useBreadCrumbs();
-
+    console.log(image);
     const formattedDate = formatHeaderDate(date);
 
     return (

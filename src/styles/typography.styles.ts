@@ -9,7 +9,7 @@ export const typographyStyles = {
     fontSize: "30px",
     fontWeight: "bold",
     marginBottom: "20px",
-    marginTop: "8px",
+    marginTop: "16px",
     lineHeight: "1.3",
   },
   h3: {
