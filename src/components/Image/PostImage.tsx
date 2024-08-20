@@ -32,9 +32,9 @@ export const PostImage = ({
   };
 
   return (
-    <div className={`w-full mb-4 px-4`}>
+    <div className={`w-full mb-4 px-4 text-center`}>
       <motion.div
-        className={`relative cursor-pointer ${containerMargin}`}
+        className={`relative cursor-pointer  ${containerMargin}`}
         style={{
           height,
           width: containerWidth,
@@ -47,7 +47,7 @@ export const PostImage = ({
         <Image
           alt={alt}
           fill
-          className={`object-cover md:object-${objectFit} rounded`}
+          className={`object-contain md:object-${objectFit} rounded`}
           {...props}
         />
       </motion.div>
