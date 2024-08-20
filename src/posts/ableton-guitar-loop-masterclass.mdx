@@ -12,23 +12,61 @@ Ever lost sleep obsessing over the perfect guitar loop? Yeah, me too. I’ve spe
 
 The quickest way to avoid wasting hours fiddling with settings, adjusting inputs, and setting up tracks is to use an Ableton template. This cuts out the tedious, uninspiring parts of making music and lets you dive straight into the creative process. I mean, who really enjoys naming the same tracks over and over? Only a real bozo 🤡.
 
+<PostImage
+  alt="a free ableton template for recording guitar loops"
+  src={"/assets/images/ableton-template-overview.png"}
+  objectFit="cover"
+  caption="Free Ableton template for recording guitar loops. Only uses stock plugins."
+/>
+<Spacer size="sm" />
 ### Here is a breakdown of my template:
 
-    •	**Input 1 Group**: This group of four tracks is set up to record from Input 1, which I reserve for direct-input, (DI) electric guitar. I have the tracks labeled Chords, Riff, Melody, and Countermelody. Each track has an EQ and compressor ready to go.
+• **Input 1 Group**: This is basically the same as the Input 1 Group, but for Input 2, which I reserve for my Shure SM7B. This group of four tracks is set up to record from Input 1, which I reserve for my acoustic and nylon string guitars. I have the tracks labeled Chords, Riff, Melody, and Countermelody. Each track has an EQ and compressor ready to go.
 
-    •	**Input 2 Group**: This is basically the same as the Input 1 Group, but for Input 2, which I reserve for my Shure SM7B. This is where I record my acoustic and nylon string guitars.
+    <ColumnContainer
+      items={
+        [
+         <PostImage alt="ableton guitar bus" src={"/assets/images/ableton-template-input-1.png"} caption="4 tracks: Chords, Riff, Melody, & Countermelody"/>,
+          <PostImage alt="ableton guitar mixing effects" src={"/assets/images/ableton-template-guitar-bus.png"} caption="Basic mixing effects for the Input 1 bus with EQ and reverb"/>
 
-      •	**Shortcut Buddy**: This is a Max for Live plugin that allows you to set hotkeys to open up plugins. I have it set so I can open an EQ by pressing the "8" key, reverb by pressing the "r" key, etc. This drastically cuts down on the amount of clicks you have to make.
-    <PostImage objectFit="contain" src="/assets/images/shortcut-buddy.png"
-        caption={
-            <p>
-                You can buy Shortcut Buddy for $15 at this link:{" "}
-                <MyLink href="https://www.noirlabs.co/">Shortcut Buddy</MyLink>
-            </p>
-        }
+        ]
+      }
+      margin="mb-12"
     />
 
-Starting with a template eliminates dozens of annoying, low-importance tasks and lets you get right to the fun part: actually making music.
+
+    •	**Input 2 Group**: This is basically the same as the Input 1 Group, but it is reserved for recording direct input (DI) electric guitar.
+    <ColumnContainer
+      items={
+        [
+         <PostImage alt="ableton guitar bus" src={"/assets/images/ableton-template-input-2.png"} caption="4 tracks: Chords, Riff, Melody, & Countermelody"/>,
+          <PostImage alt="ableton guitar mixing effects" src={"/assets/images/ableton-template-guitar-track.png"} caption="Basic mixing effects for a DI guitar"/>
+        ]
+      }
+    />
+
+
+
+
+      •	**Shortcut Buddy**: This is a Max for Live plugin that allows you to set hotkeys to open up plugins. I have it set so I can open an EQ by pressing the "8" key, reverb by pressing the "r" key, etc. This drastically cuts down on the amount of clicks you have to make.
+
+<Container>
+  <PostImage
+    alt="shortcut buddy ableton plugin"
+    objectFit="contain"
+    src="/assets/images/shortcut-buddy.png"
+    caption={
+      <p>
+        You can buy Shortcut Buddy for $15 at this link:{" "}
+        <MyLink href="https://www.noirlabs.co/">Shortcut Buddy</MyLink>
+      </p>
+    }
+  />
+</Container>
+<Spacer size="sm" />
+
+Starting with a template eliminates dozens of annoying, low-importance tasks and lets you get right
+to the fun part: actually making music.
 
 ## 2. Follow a Checklist and Automate
 
@@ -45,6 +83,8 @@ In my article, <MyLink href="https://blog.yayadean.com/posts/how-javascript-chan
     5.	**Quantize:** Tighten everything up, but don’t lose that human feel. A little bit of imperfection is what makes it sound real.
     6.  **Mix:** Balance your levels, tweak your EQ, and sprinkle on some effects to taste.
     7.	**Arrange and Bounce:** Send an outline of all of your parts for a producer to play with on their own.
+
+    <Spacer size="sm"/>
 
 <PostImage
   alt="page 1 of the guitar loop checklist by dean"
@@ -96,9 +136,24 @@ There are few things that irritate me more than having to press record every tak
   alt="colorful beans waving at you"
   objectFit="cover"
   caption="There are, however, things more irritating than not using loop record, such as playing Fall Guys."
+  containerMargin="mb-4"
 />
 
-For a deep dive into the magic of loop recording, check out this video by [INSERT VIDEO CREATOR NAME]: [LINK TO RESOURCE]. Watching it is like getting a backstage pass to your own studio.
+<Spacer size="sm" />
+
+I made a video about the basics of loop recording in Ableton. You can check it out here: <MyLink href="#">Loop Recording in Ableton</MyLink>
+
+<iframe
+  width="100%"
+  height="560"
+  src="https://www.youtube.com/embed/piyL9lNJqV4"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+/>
+
+<Spacer />
 
 ## 4. Use Complex Warping Tastefully
 

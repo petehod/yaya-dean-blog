@@ -11,11 +11,13 @@ export const PostImage = ({
   containerWidth = DEFAULT_POST_IMAGE_WIDTH,
   objectFit = "cover",
   caption,
+  fill = true,
   containerMargin = "mb-4",
   ...props
 }: ImageProps & {
   alt: string;
   height: number;
+  fill?: boolean;
   containerWidth: string | number;
   objectFit: "cover" | "contain";
   caption?: React.ReactNode;
@@ -46,7 +48,7 @@ export const PostImage = ({
       >
         <Image
           alt={alt}
-          fill
+          fill={fill}
           className={`object-contain md:object-${objectFit} rounded`}
           {...props}
         />
