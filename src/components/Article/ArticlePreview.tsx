@@ -25,13 +25,15 @@ export const ArticlePreview = memo(({ slug, description, title, date, coverImage
           </div>
         </Link>
       </motion.div>
-      <Image
-        src={`/assets/images/${coverImage}`}
-        alt="Background Image"
-        layout="fill"
-        objectFit="cover"
-        className="absolute top-0 left-0 z-0 opacity-10 pointer-events-none"
-      />
+      {coverImage && (
+        <Image
+          src={`/assets/images/${coverImage}`}
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+          className="absolute top-0 left-0 z-0 opacity-10 pointer-events-none"
+        />
+      )}
     </div>
   );
 });

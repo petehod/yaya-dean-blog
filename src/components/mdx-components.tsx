@@ -15,12 +15,36 @@ import { MyLink } from "./Link";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    h1: ({ children }) => <h1 style={typographyStyles.h1}>{children}</h1>,
-    h2: ({ children }) => <h2 style={typographyStyles.h2}>{children}</h2>,
-    h3: ({ children }) => <h3 style={typographyStyles.h3}>{children}</h3>,
-    h4: ({ children }) => <h4 style={typographyStyles.h4}>{children}</h4>,
-    h5: ({ children }) => <h5 style={typographyStyles.h5}>{children}</h5>,
-    h6: ({ children }) => <h6 style={typographyStyles.h6}>{children}</h6>,
+    h1: (props) => (
+      <h1 style={typographyStyles.h1} {...props}>
+        {props.children}
+      </h1>
+    ),
+    h2: (props) => (
+      <h2 {...props} style={typographyStyles.h2} {...props}>
+        {props.children}
+      </h2>
+    ),
+    h3: (props) => (
+      <h3 style={typographyStyles.h3} {...props}>
+        {props.children}
+      </h3>
+    ),
+    h4: (props) => (
+      <h4 style={typographyStyles.h4} {...props}>
+        {props.children}
+      </h4>
+    ),
+    h5: (props) => (
+      <h5 style={typographyStyles.h5} {...props}>
+        {props.children}
+      </h5>
+    ),
+    h6: (props) => (
+      <h6 style={typographyStyles.h6} {...props}>
+        {props.children}
+      </h6>
+    ),
     p: ({ children }) => <p style={typographyStyles.p}>{children}</p>,
     blockquote: ({ children }) => (
       <blockquote style={typographyStyles.blockquote}>{children}</blockquote>
