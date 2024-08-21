@@ -5,6 +5,7 @@ import { PostImage } from "./Image";
 import { CodeBlock } from "./CodeBlock";
 import { Spacer } from "./Spacer";
 import { ColumnContainer } from "./Column";
+import { YoutubeIFrame } from "./IFrame";
 import { Container } from "./Container";
 import { BoldText, ItalicText } from "./Text";
 import { List } from "./Lists";
@@ -41,6 +42,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     List,
     MyLink,
     CodeBlock,
+    YoutubeIFrame,
     ...components,
   };
 }
