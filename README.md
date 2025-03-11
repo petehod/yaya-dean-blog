@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blog Yaya Dean
+
+
+
+## Overview
+
+Welcome to Yaya Dean – a custom MDX and React Next.js blog crafted as a creative hub for writing guitar melodies. This project is my playground where I apply the lessons from Josh Comeau’s Joy of React course, mixing modern tech with my passion for guitar melodies. It’s designed for music producers and guitarists who want to up their melody game.
+
+![Logo](./public/blog.png)
+
+###  Why Yaya Dean?
+	•	Custom MDX Experience: Write and share content with complete control, like crafting your own musical score.
+	•	Modern Stack: Built with React and Next.js for a smooth, high-performance experience.
+	•	Inspired & Passionate: Born out of a love for guitar melodies and a desire to share insights that truly resonate.
+
+###  Features
+	•	Fully Customizable: Leverage a custom MDX setup to create rich, engaging content.
+	•	Professional Yet Fun: A unique blend of a professional look with a playful, musical spirit.
 
 ## Getting Started
 
-First, run the development server:
+### Installation
+To get started with **Yaya Dean**, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/petehod/yaya-dean-blog.git
+   cd yaya-dean-blog
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Start Development server:**
+   ```bash
+    npm run dev
+   ```
+4. Visit [localhost:3001](localhost:3001) to see the blog in action!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+I welcome contributions from fellow music enthusiasts and developers alike. If you’re passionate about guitar melodies or have ideas to improve the blog, feel free to open a pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Connect
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Got questions, feedback, or just want to chat about music and melodies? Drop me a DM on Instagram at @yayadean.
